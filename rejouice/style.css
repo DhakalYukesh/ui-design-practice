@@ -19,32 +19,32 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #FBF8F2;
+  background-color: #fbf8f2;
 }
 
 #page1 {
   height: 100vh;
   width: 100%;
-  background-color: #FBF8F2;
+  background-color: #fbf8f2;
   position: relative;
 }
 
 #cursor {
-    height: 7.5vw;
-    width: 7.5vw;
-    background-color: #FF5F38;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translate(-50%, -50%);
+  height: 7.5vw;
+  width: 7.5vw;
+  background-color: #ff5f38;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
 }
 
 #cursor h5 {
-    font-size: 1.15vw;
-    font-weight: 500;
+  font-size: 1.15vw;
+  font-weight: 500;
 }
 
 #page1 video {
@@ -82,44 +82,193 @@ nav h4 {
 }
 
 #page1-content h1 {
-    font-family: rejouice;
-    font-size: 27vw;
-    font-weight: 100;
-    line-height: 27vw;
-    cursor: default;
+  font-family: rejouice;
+  font-size: 27vw;
+  font-weight: 100;
+  line-height: 27vw;
+  cursor: default;
 }
 
 #page1-content h1 span {
-    font-family: rejouice;
+  font-family: rejouice;
 }
 
 /* Page 2 */
 
 #page2 {
-    height: 100vh;
-    width: 100%;
-    background-color: #FBF8F2;
-    padding-top: 6vw;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fbf8f2;
+  padding-top: 6vw;
 }
 
 #nav-2 {
-    border-bottom: 1px solid gray;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1vw;
-    width: 93vw;
-    margin-inline: auto;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1vw;
+  width: 95vw;
+  margin-inline: auto;
 }
 
 #nav-2 h2 {
-    font-weight: 100;
-    font-size: 1.6vw;
+  font-weight: 100;
+  font-size: 1.6vw;
+}
+
+.elem {
+  overflow: hidden;
 }
 
 .elem h1 {
-    font-size: 4.1vw;
-    font-weight: 100;
-    padding-inline: 3vw;
-    padding-top: 1vw;
+  font-size: 4.1vw;
+  font-weight: 500;
+  padding-inline: 3vw;
+  padding-top: 1vw;
 }
+
+/* Page 3 */
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page3-top {
+  text-align: center;
+  padding-block: 13vw;
+}
+
+#page3-top h4 {
+  margin-bottom: 1vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4vw;
+}
+
+#page3-top h4 span {
+  font-size: 0.65vw;
+  background-color: black;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#page3-top h2 {
+  font-size: 4.2vw;
+  font-weight: 500;
+}
+
+#page3-elements {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#element-one {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+#element-one h2 {
+  font-weight: 500;
+  font-size: 1.6vw;
+}
+
+#element-two {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#element-two .box {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#element-two .box video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#element-two .box img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.8s linear;
+}
+
+#element-two .box:hover img {
+  opacity: 0;
+}
+
+/* Page 4 */
+#page4 {
+  height: auto;
+  position: relative;
+  width: 95vw;
+  margin-inline: auto;
+}
+
+#page4-one {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8vw;
+}
+
+#page4-one h3 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 1vw;
+  font-weight: 100;
+  font-size: 1.6vw;
+}
+
+#page4-one h2 {
+  font-size: 4.2vw;
+  font-weight: 500;
+  padding-top: 1vw;
+}
+
+#page4-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#page4-two video {
+  width: 70%;
+}
+
+#page4-two svg {
+  position: absolute;
+  height: 40%;
+}
+
+/* Page 5 */
+
+#page5 {
+  height: 100vh;
+  width: 100%;
+}
+
